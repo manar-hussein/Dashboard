@@ -1,0 +1,72 @@
+
+<!-- 
+  <mat-toolbar *ngIf="open" class="mat-elevation-z8">
+
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle()"
+    >
+      <mat-icon class="menu-icon" *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon class="menu-icon" *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+    
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav> 
+     <div class="sideNav-Header d-flex justify-content-center align-items-center">
+      <div class="d-flex justify-content-start">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" class="text-start d-flex">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8702 24.0219L14.7072 22.8281L16.0855 14.5582L23.2486 15.752L21.8702 24.0219ZM14.081 31.9314C10.3546 31.6353 7.36925 30.6953 5.223 29.5363C0.0780395 26.7579 -3.35193 19.2464 5.223 15.8166C5.83377 15.5723 6.38833 15.3518 6.89119 15.1538C7.07835 10.9246 8.08429 7.57143 9.35249 5.223C12.1309 0.0780395 19.6424 -3.35193 23.0722 5.223C23.312 5.82265 23.529 6.36812 23.7241 6.86368C28.3937 6.93447 32.0667 7.99273 34.5847 9.35251C39.7297 12.1309 43.1596 19.6424 34.5847 23.0722C33.0419 23.6893 31.8577 24.1547 30.9595 24.4884C30.7038 28.4159 29.7366 31.5487 28.5333 33.777C25.7549 38.922 18.2434 42.3519 14.8136 33.777C14.5402 33.0935 14.2966 32.4804 14.081 31.9314Z" fill="white"/>
+          <circle cx="19.2197" cy="20.2198" r="7.5" fill="white"/>
+      </svg>
+        <h1 class="sideNav-Header_title bg-danger">salence</h1>
+      </div>
+     </div>
+     <div class="sideNav-content mt-5">
+      <a routerLink="dashBoard" routerLinkActive="aciveLink" class="text-decoration-none rounded-2 sideNav-content_item"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">bar_chart_2_bars</mat-icon> Overview</a>
+      <a class="text-decoration-none sideNav-content_item rounded-2"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">local_mall</mat-icon> Products</a>
+      <a class="text-decoration-none sideNav-content_item rounded-2"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">person</mat-icon> Customers</a>
+      <a class="text-decoration-none sideNav-content_item rounded-2"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">library_books</mat-icon> Orders</a>
+      <a class="text-decoration-none sideNav-content_item rounded-2"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">settings</mat-icon> Settings</a>
+      <a class="text-decoration-none sideNav-content_item rounded-2"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">monetization_on</mat-icon> Payments</a>
+      <a class="text-decoration-none sideNav-content_item rounded-2"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">confirmation_number</mat-icon> Tickets</a>
+      <a class="text-decoration-none sideNav-content_item rounded-2"><mat-icon class="material-symbols-outlined sideNav-content_item__icon">help</mat-icon> FAQs</a>
+     </div>
+   </mat-sidenav>
+    <mat-sidenav-content>
+    <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container> -->
+
+
+
+  <mat-toolbar class="d-flex justify-content-between align-items-center">
+    
+    <button
+    *ngIf="open"
+    mat-icon-button
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon class="menu-icon" *ngIf="!sidenav.opened"> <app-menu-icon></app-menu-icon> </mat-icon>
+    <mat-icon class="menu-icon" *ngIf="sidenav.opened"> close </mat-icon>
+  </button>
+    <div class="header">
+      <h2 class="fs-38 fw-bolder text-white">Welcome back, Jenny</h2>
+      <p class="tittle-text">Here’s what’s happening with your store today.</p>
+    </div>
+    <div class="customWidth">
+       <app-header></app-header>
+    </div>
+   </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav class="mat-elevation-z8"> <app-sidenave></app-sidenave> </mat-sidenav>
+
+<mat-sidenav-content>
+  <div class="content mat-elevation-z8 ">
+    <div class="width">
+      <router-outlet></router-outlet>
+    </div>
+     </div>
+</mat-sidenav-content>
+  </mat-sidenav-container>

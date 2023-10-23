@@ -1,0 +1,93 @@
+
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$DashBoard-primary: mat.define-palette(mat.$indigo-palette);
+$DashBoard-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$DashBoard-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$DashBoard-theme: mat.define-light-theme((
+  color: (
+    primary: $DashBoard-primary,
+    accent: $DashBoard-accent,
+    warn: $DashBoard-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($DashBoard-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #151515 !important; color: #FFFFFF !important;}
+$red:#DA5538;
+$colors:(
+ "Cards_bg":#1D1D1D,
+  "OFC-BG":#151515,
+  "OFC-font-grey":#BBBBBB,
+  "OFC-font-light":#7D7D7D,
+  "OFC-Green":#D3F56A,
+  "OFC-red":#DA5538,
+  "OFC-stoke":#303030,
+  "OFC-White":#FFFFFF,
+  "Grey":#7D7D7D,
+  "Blue":#2A4B52
+);
+
+@each $key,$value in $colors
+{
+  .btn-#{$key}
+  {
+    background-color:$value;
+  }
+  .bg-#{$key}
+  {
+    background-color:$value;
+  }
+  .text-#{$key}
+  {
+    color:$value;
+  }
+};
+.cursorPointer
+{
+  cursor: pointer;
+}
+.fs-34
+{
+  font-size: 34px;
+}
+.fs-38
+{
+  font-size: 38px;
+}
+.fs-18
+{
+  font-size: 18px;
+}
+.fs-12
+{
+  font-size: 12px;
+}
+
+
+
+

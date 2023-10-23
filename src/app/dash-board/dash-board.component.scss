@@ -1,0 +1,108 @@
+.dashBoard-header_icons__img
+{
+    width: 30px;
+    height: 30px;
+};
+.dashBoard-header_icons__text
+{
+    font: {
+        size: 22px
+    };
+};
+.dashBoard-header
+{
+    height: 70px;
+};
+.dashBoard-header_name__title
+{
+    font-size: 38px;
+};
+.icon
+{
+    width: 36px;
+    height: 36px;
+};
+.dashBoard-first-card_header__text
+{
+    font-size: 22px;
+    color: #1d1d1d;
+};
+.dashBoard-first-card_body__text
+{
+    font-size: 34px;
+    color: #1D1D1D;
+    font-weight: 500;
+};
+.dashBoard-first-card_footer
+{
+  color: #607916;
+  font-size: 18px;
+  width: 80%;
+};
+.dashBoard-first-card_footer__text___icon
+{
+  font-size: 15px;
+  
+};
+.dashBoard-card_header__text
+{
+    color: #BBB;
+font-family: Inter;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+};
+.d-card-footer
+{
+    width: 80%;
+};
+input
+{
+    border-color: #303030 !important;
+    width: 60% !important;
+};
+::placeholder
+{
+    color: #7D7D7D;
+};
+mat-select
+{
+    background-color: transparent !important;
+};
+select
+{
+    color: #7D7D7D !important;
+    border-color: #303030 !important;
+    width: 20% !important;
+}
+option
+{
+    background-color: transparent !important;
+    color: #7D7D7D !important;
+};
+table
+{
+    background-color: #1D1D1D !important;
+}
+th,td{
+    background-color: transparent;
+
+}
+th
+{
+    color:  #7D7D7D;
+    font-size: 20px;
+    
+}
+td
+{
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width:900px){
+    .tableSection
+    {
+        font-size: 0.8rem !important;
+    }
+}

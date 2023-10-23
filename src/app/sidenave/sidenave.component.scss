@@ -1,0 +1,100 @@
+.sideNav-Header_title
+{
+color: var(--OFC---White, #FFF);
+font-family: Inter;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+position: absolute;
+left: 65px;
+bottom: 10px;
+};
+.sideNav-Header
+{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+width: 160px;
+height: 70px;
+align-items: flex-start;
+border-radius: 0px 0px 30px 0px;
+border-right: 1px solid var(--OFC---stoke, #303030);
+border-bottom: 1px solid var(--OFC---stoke, #303030);
+};
+svg
+{
+  position: absolute;
+  left: 20px;
+  top: 15px
+};
+.sideNav-content
+{
+    position: absolute;
+    top: 42px;
+    left: 20px;
+    display: flex;
+padding: 20px 10px 10px 0px;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 0px 30px 30px 0px;
+border-right: 1px solid var(--OFC---stoke, #303030);
+border-bottom: 1px solid var(--OFC---stoke, #303030);
+};
+.sideNav-content_item{
+    color: var(--OFC---font-grey, #BBB);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-right: 10px;
+    margin: 5px 0px;
+    line-height: normal;
+    display: flex;
+    transition: all 0.5s;
+
+    &:hover{
+      transform: translateX(5px);
+      box-shadow: 0px 0px 5px white;
+      cursor: pointer;
+    }
+}
+.sideNav-down-content
+{
+    position: absolute;
+    top: 470px;
+    left: 20px;
+    display: flex;
+padding: 10px 35px 10px 0px;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 0px 30px 30px 0px;
+border-right: 1px solid var(--OFC---stoke, #303030);
+border-bottom: 1px solid var(--OFC---stoke, #303030);
+}
+.sideNav-content_item__icon
+{
+   margin: 0px 5px;
+   color: var(--OFC---font-grey, #BBB);
+}
+.aciveLink
+{
+    color: var(--OFC---White, #FFF);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.aciveLink .sideNav-content_item__icon
+{
+    color: #D3F56A;
+}

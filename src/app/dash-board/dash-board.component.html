@@ -1,0 +1,136 @@
+
+    <div class="row gy-4">
+        <div class="col-md-3 dashBoard-first-card rounded-start-2 bg-OFC-Green p-3">
+      
+          <div class="dashBoard-first-card_header d-flex">
+            <div class="icon bg-black rounded-circle d-flex justify-content-center align-items-center text-center">
+                <mat-icon class="fs-5">tab_group</mat-icon>
+            </div>
+            <p class="dashBoard-first-card_header__text fw-bold ms-3">Total sales</p>
+          </div>
+          <div class="dashBoard-first-card_body">
+            <h3 class="dashBoard-first-card_body__text">$825,491.73</h3>
+          </div>
+          <div class="dashBoard-first-card_footer d-flex justify-content-between  align-items-center">
+            <div class="d-flex dashBoard-first-card_footer__text justify-content-center align-items-center">
+                <mat-icon class="d-flex dashBoard-first-card_footer__text___icon mb-2"> north_east</mat-icon>
+                <p>20.9%</p>
+            </div>
+            <p>+18.4K <span>this week</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 bg-Cards_bg p-3 border-end border-opacity-50">
+         <div class="d-flex">
+           <div class="icon bg-OFC-stoke rounded-circle d-flex justify-content-center align-items-center text-center"><mat-icon>group</mat-icon></div>
+           <p class="dashBoard-card_header__text fw-bold ms-3">Visitors</p>
+         </div>
+         <p class="text-white fs-34"> 780,192</p>
+         <div class="d-flex justify-content-between align-items-center d-card-footer">
+            <div class="d-flex justify-content-center align-items-center">
+                <mat-icon class="d-flex dashBoard-first-card_footer__text___icon mb-2 text-OFC-Green"> north_east</mat-icon>
+                <p class="fs-18 text-OFC-Green">13%</p>
+            </div>
+            <p class="fs-18 text-OFC-font-light">+3.5K this week</p>
+          </div>
+
+        </div>
+        <div class="col-md-3 bg-Cards_bg p-3 border-end border-opacity-50">
+            <div class="d-flex">
+              <div class="icon bg-OFC-stoke rounded-circle d-flex justify-content-center align-items-center text-center"><mat-icon class="material-symbols-outlined">star</mat-icon></div>
+              <p class="dashBoard-card_header__text fw-bold ms-3">Total Orders</p>
+            </div>
+            <p class="text-white fs-34"> 2625.991</p>
+            <div class="d-flex justify-content-between align-items-center d-card-footer">
+               <div class="d-flex justify-content-center align-items-center">
+                   <mat-icon class="d-flex dashBoard-first-card_footer__text___icon mb-2 text-OFC-Green"> north_east</mat-icon>
+                   <p class="fs-18 text-OFC-Green">4.2%</p>
+               </div>
+               <p class="fs-18 text-OFC-font-light">+5K this week</p>
+             </div>
+        </div>
+        <div class="col-md-3 bg-Cards_bg p-3 rounded-end-2">
+            <div class="d-flex">
+              <div class="icon bg-OFC-stoke rounded-circle d-flex justify-content-center align-items-center text-center"><mat-icon>keyboard_return</mat-icon></div>
+              <p class="dashBoard-card_header__text fw-bold ms-3">Refund</p>
+            </div>
+            <p class="text-white fs-34"> 780,192</p>
+            <div class="d-flex justify-content-between align-items-center d-card-footer">
+               <div class="d-flex justify-content-center align-items-center">
+                   <mat-icon class="d-flex dashBoard-first-card_footer__text___icon mb-2 text-OFC-red"> call_received</mat-icon>
+                   <p class="fs-18 text-OFC-red">9.1%</p>
+               </div>
+               <p class="fs-18 text-OFC-font-light">+66K this week</p>
+             </div>
+        </div>
+        <div class="col-md-9 rounded-3 bg-Cards_bg p-4 pt-1">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fs-4 py-2">Revenue vs Orders</h3>
+            <div class="d-flex">
+              <p class="text-OFC-font-light fs-5 py-2 me-2"><span class="fs-1 text-OFC-red fw-bolder">.</span> Revenue </p>
+              <p class="text-OFC-font-light fs-5 py-2"><span class="fs-1 text-OFC-Green fw-bolder">.</span> Orders </p>
+            </div>
+          </div>
+        <div class="chart-container align-self-center">
+          <canvas  id="MyChart" >{{ chart }}</canvas>
+         </div>
+
+        </div>
+        <div class="col-md-3  ps-3">
+          <div class="rounded-3 bg-Cards_bg p-4 pt-1">
+            <h3 class="fs-4 pt-4">Sales by category</h3>
+           <app-doughnutchart></app-doughnutchart>
+          </div>
+        </div>
+        <div class="col-md-9 rounded-3 bg-Cards_bg p-4 pb-1">
+        <div class="d-flex justify-content-between">
+          <h3 class="fs-4">Sales by category</h3>
+          <div class="d-flex w-75 justify-content-end ">
+           <input type="text" class="form-control  border border-1 border-opacity-25 me-3 bg-transparent" placeholder="Search">
+           <select class="form-select  border border-1 border-opacity-25  bg-transparent " aria-label="Default select example">
+             <option selected>This week</option>
+             <option value="1">One</option>
+             <option value="2">Two</option>
+             <option value="3">Three</option>
+           </select>
+          </div>
+        </div>
+        <div class="pt-3 w-100">
+          <table class="table bg-Cards_bg text-start table-borderless tableSection">
+            <thead class="tableSection">
+              <tr class="tableSection">
+                <th class="tableSection" scope="col">Product name</th>
+                <th class="tableSection" scope="col">Order ID</th>
+                <th class="tableSection" scope="col">Price</th>
+                <th class="tableSection" scope="col">Sold</th>
+                <th class="tableSection"  scope="col">Sales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tableSection" scope="row"> <mat-icon class="me-1 pt-1 tableSection">laptop</mat-icon> MackBook Air AAPL</td>
+                <td class="tableSection">#719261</td>
+                <td class="tableSection">$1,846</td>
+                <td class="tableSection">9,971</td>
+                <td class="tableSection">$15,308,94</td>
+
+              </tr>
+      
+            </tbody>
+          </table>
+        </div>
+
+     
+          </div>
+          <div class="col-md-3  ps-3">
+            <div class="rounded-3 bg-Blue p-4 h-100">
+              <h3 class="fs-4 mb-3">Release you maximal potential software.</h3>
+              <button class="btn btn-OFC-Green fw-bolder mx-auto d-block py-3 px-5">Upgrade to Pro</button>
+          </div>
+      </div>
+        </div>
+   
+
+
+
+
+

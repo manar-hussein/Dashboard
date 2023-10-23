@@ -1,0 +1,215 @@
+*{
+    background-color: #151515 !important;
+    color: white;
+    font-family: Inter;
+  };
+//   mat-sidenav {
+//     width: 200px;
+//     padding: 16px 16px !important;
+//     border-right: none;
+//     color: white;
+//     border-radius: 10px;
+//     text-align: start;
+//     position: fixed;
+//     top: 0px;
+//     bottom: 0;
+//     left: 0;
+//   };
+//  .menu-icon {
+//     position: fixed;
+//     top: 20px;
+//     left: 20px;
+//     width: 100%;
+//     font-size: 1rem;
+//     z-index: 9000 !important;
+//   };
+
+//   .menu-button {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     font-size: 1rem;
+//   };
+
+// .sideNav-Header_title
+// {
+// color: var(--OFC---White, #FFF);
+// font-family: Inter;
+// font-size: 28px;
+// font-style: normal;
+// font-weight: 500;
+// line-height: normal;
+// position: absolute;
+// left: 70px;
+// bottom: 10px;
+// };
+// .sideNav-Header
+// {
+//     position: absolute;
+//     top: 20px;
+//     left: 15px;
+//     display: flex;
+//     justify-content: start;
+//     align-items: center;
+//     display: flex;
+// width: 170px;
+// height: 70px;
+// align-items: flex-start;
+// border-radius: 0px 0px 30px 0px;
+// border-right: 1px solid var(--OFC---stoke, #303030);
+// border-bottom: 1px solid var(--OFC---stoke, #303030);
+// };
+// svg
+// {
+//   position: absolute;
+//   left: 20px;
+//   top: 15px
+// };
+// .sideNav-content
+// {
+//     position: absolute;
+//     top: 42px;
+//     left: 20px;
+//     display: flex;
+// padding: 20px 15px 10px 0px;
+// flex-direction: column;
+// align-items: flex-start;
+// border-radius: 0px 30px 30px 0px;
+// border-right: 1px solid var(--OFC---stoke, #303030);
+// border-bottom: 1px solid var(--OFC---stoke, #303030);
+// };
+// .sideNav-content_item{
+//     color: var(--OFC---font-grey, #BBB);
+//     font-family: Inter;
+//     font-size: 22px;
+//     font-style: normal;
+//     font-weight: 300;
+//     padding-bottom: 10px;
+//     padding-top: 10px;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//     margin: 5px 0px;
+//     line-height: normal;
+//     display: flex;
+//     transition: all 0.5s;
+
+//     &:hover{
+//       transform: translateX(5px);
+//       box-shadow: 0px 0px 5px white;
+//       cursor: pointer;
+//     }
+// }
+// .sideNav-content_item__icon
+// {
+//    margin: 0px 5px;
+//    color: var(--OFC---font-grey, #BBB);
+
+// }
+// .aciveLink
+// {
+//     color: var(--OFC---White, #FFF);
+//     font-family: Inter;
+//     font-size: 22px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: normal;
+//     text-decoration: none;
+// }
+// .aciveLink .sideNav-content_item__icon
+// {
+//     color: #D3F56A;
+// }
+.dashBoard-header_icons__img
+{
+    width: 30px;
+    height: 30px;
+}
+.dashBoard-header_icons__text
+{
+    font: {
+        size: 22px
+    };
+ }
+// .dashBoard-header
+// {
+//     height: 70px;
+// }
+// .dashBoard-header_name__title
+// {
+//     font-size: 38px;
+// }
+// .icon
+// {
+//     width: 36px;
+//     height: 36px;
+// }
+mat-toolbar {
+
+  color: white;
+  width: 80% !important;
+  margin-left: 232px;
+  margin-right: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  padding: 70px 0px 50px 0px !important;
+ 
+}
+@media screen and (max-width:1180px) {
+  mat-toolbar
+  {
+    margin-left: 0;
+    padding: 10px 0px 10px 0px !important;
+  }
+  .header
+  {
+    display: none;
+  }
+ 
+}
+
+mat-sidenav {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: #002b5c;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+}
+
+.content {
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+
+.fs-38
+{
+  font-size: 38px;
+}
+.tittle-text
+{
+  color: #bbb;
+  font-size: 22px;
+}
+.customWidth
+{
+  width: 30%;
+  align-self:flex-end;
+}
+.width
+{
+  width: 100%;
+  padding: 10px 50px;
+}
